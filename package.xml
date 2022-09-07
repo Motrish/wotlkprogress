@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="portal" version="2.3.28.0">
+	<folder>wotlkprogress</folder>
+	<name>WoW Wotlk Progress</name>
+	<author>Motrish</author>
+	<authorEmail>nehmer.michael@gmx.de</authorEmail>
+	<creationDate>2022-09-06</creationDate>
+	<copyright>(C)2022 Motrish</copyright>
+	<version>1.3</version>
+	<level>stable</level>
+</install>
