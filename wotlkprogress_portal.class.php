@@ -16,18 +16,28 @@ class wotlkprogress_portal extends portal_generic {
 	protected static $path		= 'wotlkprogress';
 	protected static $data		= array(
 		'name'			=> 'Wotlk Progress',
-		'version'		=> '1.3',
-		'author'		=> 'Motrish',
+		'version'		=> '1.4',
+		'author'		=> 'Motrish (Link to Github)',
 		'icon'			=> 'fa-code',
-		'contact'		=> 'nehmer.michael@gmx.de',
-		'description'	=> 'Shows the progress of the Wotlk Raids',
+		'contact'		=> 'https://github.com/Motrish/wotlkprogress',
+		'description'	=> 'Shows the progress of the Wotlk Raids. https://github.com/Motrish/ ',
 		'multiple'		=> false,
 		'lang_prefix'	=> 'wotlkprogress_'
+		#'information'	=> 'https://github.com/Motrish/'
 	);
 
 	protected static $positions = array( 'left1', 'left2', 'right');
 	public function get_settings($state){
 		$settings	= array(
+				#Info
+				'wotlk_notes'	=> array(
+					'type'		=> 'text',		
+					'default'	=> 'https://github.com/Motrish/wotlkprogress',
+					'size'		=> 30,
+				),
+
+
+
 				#Raid 1
 			'boss1'	=> array(
 				'type'		=> 'dropdown',
@@ -69,11 +79,12 @@ class wotlkprogress_portal extends portal_generic {
 				'class'		=> 'js_reload',			
 				'options'	=> array(
 					'wotlk_notreleased'	=> $this->user->lang('wotlk_notreleased'),					
-					'wotlk_0_4'	=> $this->user->lang('wotlk_0_4'),
-					'wotlk_1_4'	=> $this->user->lang('wotlk_1_4'),
-					'wotlk_2_4'	=> $this->user->lang('wotlk_2_4'),
-					'wotlk_4_4'	=> $this->user->lang('wotlk_3_4'),
-					'wotlk_clear'	=> $this->user->lang('wotlk_clear'),
+					'wotlk_TBD'	=> $this->user->lang('wotlk_TBD'),
+					'wotlk_OSclear'	=> $this->user->lang('wotlk_clear'),
+					'wotlk_+1'	=> $this->user->lang('wotlk_+1'),
+					'wotlk_+2'	=> $this->user->lang('wotlk_+2'),
+					'wotlk_+3'	=> $this->user->lang('wotlk_+3'),
+					
 
 				),
 			),
@@ -153,6 +164,25 @@ class wotlkprogress_portal extends portal_generic {
 					'wotlk_0_1'	=> $this->user->lang('wotlk_0_1'),
 					'wotlk_clear'	=> $this->user->lang('wotlk_clear'),
 				),
+			),
+			#Raid 9 Archavon
+			'boss9'	=> array(
+				'type'		=> 'dropdown',	
+				'class'		=> 'js_reload',			
+				'options'	=> array(
+					'wotlk_notreleased'	=> $this->user->lang('wotlk_notreleased'),
+					'wotlk_0_1'	=> $this->user->lang('wotlk_0_1'),
+					'wotlk_0_2'	=> $this->user->lang('wotlk_0_2'),
+					'wotlk_1_2'	=> $this->user->lang('wotlk_1_2'),
+					'wotlk_0_3'	=> $this->user->lang('wotlk_0_3'),
+					'wotlk_1_3'	=> $this->user->lang('wotlk_1_3'),
+					'wotlk_2_3'	=> $this->user->lang('wotlk_2_3'),
+					'wotlk_0_4'	=> $this->user->lang('wotlk_0_4'),
+					'wotlk_1_4'	=> $this->user->lang('wotlk_1_4'),
+					'wotlk_2_4'	=> $this->user->lang('wotlk_2_4'),
+					'wotlk_3_4'	=> $this->user->lang('wotlk_3_4'),
+					'wotlk_clear'	=> $this->user->lang('wotlk_clear'),
+				),
 			),		
 		
 		);
@@ -182,10 +212,12 @@ class wotlkprogress_portal extends portal_generic {
 			if($this->config('boss'.$actualBoss) == "wotlk_0_1"){$Down="<font color='red'>".$this->user->lang('wotlk_0_1')."</font>";}					 
 
 			#OS
-			if($this->config('boss'.$actualBoss) == "wotlk_0_4"){$Down="<font color='red'>".$this->user->lang('wotlk_0_4')."</font>";}					
-			if($this->config('boss'.$actualBoss) == "wotlk_1_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_1_4')."</font>";}					
-			if($this->config('boss'.$actualBoss) == "wotlk_2_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_2_4')."</font>";}					
-			if($this->config('boss'.$actualBoss) == "wotlk_3_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_3_4')."</font>";}											 
+			if($this->config('boss'.$actualBoss) == "wotlk_TBD"){$Down="<font color='red'>".$this->user->lang('wotlk_TBD')."</font>";}					
+			if($this->config('boss'.$actualBoss) == "wotlk_+1"){$Down="<font color='yellow'>".$this->user->lang('wotlk_+1')."</font>";}					
+			if($this->config('boss'.$actualBoss) == "wotlk_+2"){$Down="<font color='yellow'>".$this->user->lang('wotlk_+2')."</font>";}					
+			if($this->config('boss'.$actualBoss) == "wotlk_+3"){$Down="<font color='yellow'>".$this->user->lang('wotlk_+3')."</font>";}	
+			if($this->config('boss'.$actualBoss) == "wotlk_+3"){$Down="<font color='lime'>".$this->user->lang('wotlk_+3')."</font>";}	
+			if($this->config('boss'.$actualBoss) == "wotlk_OSclear"){$Down="<font color='yellow'>".$this->user->lang('wotlk_clear')."</font>";}										 
 				 
 			#PDK
 			if($this->config('boss'.$actualBoss) == "wotlk_0_5"){$Down="<font color='red'>".$this->user->lang('wotlk_0_5')."</font>";}					
@@ -241,6 +273,18 @@ class wotlkprogress_portal extends portal_generic {
 			if($this->config('boss'.$actualBoss) == "wotlk_12_15"){$Down="<font color='yellow'>".$this->user->lang('wotlk_12_15')."</font>";}
 			if($this->config('boss'.$actualBoss) == "wotlk_13_15"){$Down="<font color='yellow'>".$this->user->lang('wotlk_13_15')."</font>";}
 			if($this->config('boss'.$actualBoss) == "wotlk_14_15"){$Down="<font color='yellow'>".$this->user->lang('wotlk_14_15')."</font>";}
+
+			#Archavon
+			if($this->config('boss'.$actualBoss) == "wotlk_0_1"){$Down="<font color='red'>".$this->user->lang('wotlk_0_1')."</font>";}					
+			if($this->config('boss'.$actualBoss) == "wotlk_0_2"){$Down="<font color='yellow'>".$this->user->lang('wotlk_0_2')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_1_2"){$Down="<font color='yellow'>".$this->user->lang('wotlk_1_2')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_0_3"){$Down="<font color='yellow'>".$this->user->lang('wotlk_0_3')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_1_3"){$Down="<font color='yellow'>".$this->user->lang('wotlk_1_3')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_2_3"){$Down="<font color='yellow'>".$this->user->lang('wotlk_2_3')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_0_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_0_4')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_1_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_1_4')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_2_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_2_4')."</font>";}					 
+			if($this->config('boss'.$actualBoss) == "wotlk_3_4"){$Down="<font color='yellow'>".$this->user->lang('wotlk_3_4')."</font>";}	
 
 
 

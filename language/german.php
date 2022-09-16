@@ -10,7 +10,7 @@
 if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
 }
-
+$lang['wotlkprogress_f_wotlk_notes']		= 'Check for Updates on';
 $lang['wotlkprogress']				= 'WoW Wotlk Progress';
 $lang['wotlkprogress_name']			= 'WoW Wotlk Progress';
 $lang['wotlkprogress_desc']			= 'Stelle hier den aktuellen Raidfortschritt ein.';
@@ -22,6 +22,7 @@ $lang['wotlkprogress_f_boss5']		= 'Prüfung des Kreuzfahrers';
 $lang['wotlkprogress_f_boss6']		= 'Onyxias Hort';
 $lang['wotlkprogress_f_boss7']		= 'Eiskronenzitadelle';
 $lang['wotlkprogress_f_boss8']		= 'Rubinsanktum';
+$lang['wotlkprogress_f_boss9']		= 'Archavons Kammer';
 
 
 $lang['wotlk_notreleased']			= 'GESCHLOSSEN';
@@ -41,6 +42,12 @@ $lang['wotlk_0_4']					= '0/4';
 $lang['wotlk_1_4']					= '1/4';
 $lang['wotlk_2_4']					= '2/4';
 $lang['wotlk_3_4']					= '3/4';
+
+$lang['wotlk_TBD']					= 'TBD';
+$lang['wotlk_OSclear']				= 'CLEAR +0';
+$lang['wotlk_+1']					= 'CLEAR +1';
+$lang['wotlk_+2']					= 'CLEAR +2';
+$lang['wotlk_+3']					= 'CLEAR +3';
 
 $lang['wotlk_0_5']					= '0/5';
 $lang['wotlk_1_5']					= '1/5';

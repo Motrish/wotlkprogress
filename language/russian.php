@@ -11,22 +11,22 @@ if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
 }
 $lang['wotlkprogress_f_wotlk_notes']		= 'Check for Updates on';
-$lang['wotlkprogress']				= 'WoW Wotlk Progress';
+$lang['wotlkprogress']				= 'Прогресс Гильдии:';
 $lang['wotlkprogress_name']			= 'WoW Wotlk Progress';
-$lang['wotlkprogress_desc']			= 'Stelle hier den aktuellen Raidfortschritt ein.';
-$lang['wotlkprogress_f_boss1']		= 'Naxxramas';
-$lang['wotlkprogress_f_boss2']		= 'Eye of Eternity';
-$lang['wotlkprogress_f_boss3']		= 'The Obsidian Sanctum';
-$lang['wotlkprogress_f_boss4']		= 'Ulduar';
-$lang['wotlkprogress_f_boss5']		= 'Trial of the Crusader';
-$lang['wotlkprogress_f_boss6']		= 'Onyxias Lair';
-$lang['wotlkprogress_f_boss7']		= 'Icecrown Citadel';
-$lang['wotlkprogress_f_boss8']		= 'The Ruby Sanctum';
-$lang['wotlkprogress_f_boss9']		= 'Vault of Archavon';
+$lang['wotlkprogress_desc']			= 'Внесите информацию о рейдовом прогресса Вашей Гильдии.';
+$lang['wotlkprogress_f_boss1']		= 'Наксрамас';
+$lang['wotlkprogress_f_boss2']		= 'Око Вечности';
+$lang['wotlkprogress_f_boss3']		= 'Обсидиановое Святилище';
+$lang['wotlkprogress_f_boss4']		= 'Ульдуар';
+$lang['wotlkprogress_f_boss5']		= 'Испытание Крестоносца';
+$lang['wotlkprogress_f_boss6']		= 'Логово Ониксии';
+$lang['wotlkprogress_f_boss7']		= 'Цитадель Ледяной Короны';
+$lang['wotlkprogress_f_boss8']		= 'Рубиновое Святилище';
+$lang['wotlkprogress_f_boss9']		= 'Склеп Аркавона';
 
-$lang['wotlk_notreleased']			= 'CLOSED';
+$lang['wotlk_notreleased']			= 'Недоступно.';
 
-$lang['wotlk_clear']				= 'CLEAR';
+$lang['wotlk_clear']				= 'Пройдено!';
 
 $lang['wotlk_0_1']					= '0/1';
 
@@ -43,10 +43,10 @@ $lang['wotlk_2_4']					= '2/4';
 $lang['wotlk_3_4']					= '3/4';
 
 $lang['wotlk_TBD']					= 'TBD';
-$lang['wotlk_OSclear']				= 'CLEAR +0';
-$lang['wotlk_+1']					= 'CLEAR +1';
-$lang['wotlk_+2']					= 'CLEAR +2';
-$lang['wotlk_+3']					= 'CLEAR +3';
+$lang['wotlk_OSclear']				= 'Пройдено! +0';
+$lang['wotlk_+1']					= 'Пройдено! +1';
+$lang['wotlk_+2']					= 'Пройдено! +2';
+$lang['wotlk_+3']					= 'Пройдено! +3';
 
 $lang['wotlk_0_5']					= '0/5';
 $lang['wotlk_1_5']					= '1/5';
@@ -109,7 +109,7 @@ $lang['wotlk_6_11']					= '6/11';
 $lang['wotlk_7_11']					= '7/11';
 $lang['wotlk_8_11']					= '8/11';
 $lang['wotlk_9_11']					= '9/11';
-$lang['wotlk_10_11']				= '10/11';
+$lang['wotlk_10_11']					= '10/11';
 
 $lang['test']						= array('Open','DOWN');
 ?>
