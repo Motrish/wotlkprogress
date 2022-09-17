@@ -21,7 +21,7 @@ class wotlkprogress_portal extends portal_generic {
 		'icon'			=> 'fa-code',
 		'contact'		=> 'https://github.com/Motrish/wotlkprogress',
 		'description'	=> 'Shows the progress of the Wotlk Raids. https://github.com/Motrish/ ',
-		'multiple'		=> false,
+		'multiple'		=> true,
 		'lang_prefix'	=> 'wotlkprogress_'
 		#'information'	=> 'https://github.com/Motrish/'
 	);
