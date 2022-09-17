@@ -21,7 +21,7 @@ class wotlkprogress_portal extends portal_generic {
 		'icon'			=> 'fa-code',
 		'contact'		=> 'nehmer.michael@gmx.de',
 		'description'	=> 'Shows the progress of the Wotlk Raids',
-		'multiple'		=> false,
+		'multiple'		=> true,
 		'lang_prefix'	=> 'wotlkprogress_'
 	);
 
