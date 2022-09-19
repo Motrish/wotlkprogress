@@ -169,6 +169,5 @@ $lang['wotlk_12_15']					= '12/15';
 $lang['wotlk_13_15']					= '13/15';
 $lang['wotlk_14_15']					= '14/15';
 
-
 $lang['test']						= array('Open','DOWN');
 ?>
