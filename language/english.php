@@ -10,23 +10,23 @@
 if ( !defined('EQDKP_INC') ){
 	header('HTTP/1.0 404 Not Found');exit;
 }
-$lang['wotlkprogress_f_wotlk_notes']		= 'Check for Updates on';
-$lang['wotlkprogress']				= 'WoW Wotlk Progress';
-$lang['wotlkprogress_name']			= 'WoW Wotlk Progress';
-$lang['wotlkprogress_desc']			= 'Stelle hier den aktuellen Raidfortschritt ein.';
-$lang['wotlkprogress_f_boss1']		= 'Naxxramas';
-$lang['wotlkprogress_f_boss2']		= 'Eye of Eternity';
-$lang['wotlkprogress_f_boss3']		= 'The Obsidian Sanctum';
-$lang['wotlkprogress_f_boss4']		= 'Ulduar';
-$lang['wotlkprogress_f_boss5']		= 'Trial of the Crusader';
-$lang['wotlkprogress_f_boss6']		= 'Onyxias Lair';
-$lang['wotlkprogress_f_boss7']		= 'Icecrown Citadel';
-$lang['wotlkprogress_f_boss8']		= 'The Ruby Sanctum';
-$lang['wotlkprogress_f_boss9']		= 'Vault of Archavon';
+$lang['wotlkprogress_f_wotlk_notes']			= 'Check for Updates on';
+$lang['wotlkprogress']					= 'WoW Wotlk Progress';
+$lang['wotlkprogress_name']				= 'WoW Wotlk Progress';
+$lang['wotlkprogress_desc']				= 'Set the current raid progress here.';
+$lang['wotlkprogress_f_boss1']				= 'Naxxramas';
+$lang['wotlkprogress_f_boss2']				= 'Eye of Eternity';
+$lang['wotlkprogress_f_boss3']				= 'The Obsidian Sanctum';
+$lang['wotlkprogress_f_boss4']				= 'Ulduar';
+$lang['wotlkprogress_f_boss5']				= 'Trial of the Crusader';
+$lang['wotlkprogress_f_boss6']				= 'Onyxias Lair';
+$lang['wotlkprogress_f_boss7']				= 'Icecrown Citadel';
+$lang['wotlkprogress_f_boss8']				= 'The Ruby Sanctum';
+$lang['wotlkprogress_f_boss9']				= 'Vault of Archavon';
 
-$lang['wotlk_notreleased']			= 'CLOSED';
+$lang['wotlk_notreleased']				= 'CLOSED';
 
-$lang['wotlk_clear']				= 'CLEAR';
+$lang['wotlk_clear']					= 'CLEAR';
 
 $lang['wotlk_0_1']					= '0/1';
 
@@ -43,7 +43,7 @@ $lang['wotlk_2_4']					= '2/4';
 $lang['wotlk_3_4']					= '3/4';
 
 $lang['wotlk_TBD']					= 'TBD';
-$lang['wotlk_OSclear']				= 'CLEAR +0';
+$lang['wotlk_OSclear']					= 'CLEAR +0';
 $lang['wotlk_+1']					= 'CLEAR +1';
 $lang['wotlk_+2']					= 'CLEAR +2';
 $lang['wotlk_+3']					= 'CLEAR +3';
@@ -109,7 +109,65 @@ $lang['wotlk_6_11']					= '6/11';
 $lang['wotlk_7_11']					= '7/11';
 $lang['wotlk_8_11']					= '8/11';
 $lang['wotlk_9_11']					= '9/11';
-$lang['wotlk_10_11']				= '10/11';
+$lang['wotlk_10_11']					= '10/11';
+
+$lang['wotlk_0_12']					= '0/12';
+$lang['wotlk_1_12']					= '1/12';
+$lang['wotlk_2_12']					= '2/12';
+$lang['wotlk_3_12']					= '3/12';
+$lang['wotlk_4_12']					= '4/12';
+$lang['wotlk_5_12']					= '5/12';
+$lang['wotlk_6_12']					= '6/12';
+$lang['wotlk_7_12']					= '7/12';
+$lang['wotlk_8_12']					= '8/12';
+$lang['wotlk_9_12']					= '9/12';
+$lang['wotlk_10_12']					= '10/12';
+$lang['wotlk_11_12']					= '11/12';
+
+$lang['wotlk_0_13']					= '0/13';
+$lang['wotlk_1_13']					= '1/13';
+$lang['wotlk_2_13']					= '2/13';
+$lang['wotlk_3_13']					= '3/13';
+$lang['wotlk_4_13']					= '4/13';
+$lang['wotlk_5_13']					= '5/13';
+$lang['wotlk_6_13']					= '6/13';
+$lang['wotlk_7_13']					= '7/13';
+$lang['wotlk_8_13']					= '8/13';
+$lang['wotlk_9_13']					= '9/13';
+$lang['wotlk_10_13']					= '10/13';
+$lang['wotlk_11_13']					= '11/13';
+$lang['wotlk_12_13']					= '12/13';
+
+$lang['wotlk_0_14']					= '0/14';
+$lang['wotlk_1_14']					= '1/14';
+$lang['wotlk_2_14']					= '2/14';
+$lang['wotlk_3_14']					= '3/14';
+$lang['wotlk_4_14']					= '4/14';
+$lang['wotlk_5_14']					= '5/14';
+$lang['wotlk_6_14']					= '6/14';
+$lang['wotlk_7_14']					= '7/14';
+$lang['wotlk_8_14']					= '8/14';
+$lang['wotlk_9_14']					= '9/14';
+$lang['wotlk_10_14']					= '10/14';
+$lang['wotlk_11_14']					= '11/14';
+$lang['wotlk_12_14']					= '12/14';
+$lang['wotlk_13_14']					= '13/14';
+
+$lang['wotlk_0_15']					= '0/15';
+$lang['wotlk_1_15']					= '1/15';
+$lang['wotlk_2_15']					= '2/15';
+$lang['wotlk_3_15']					= '3/15';
+$lang['wotlk_4_15']					= '4/15';
+$lang['wotlk_5_15']					= '5/15';
+$lang['wotlk_6_15']					= '6/15';
+$lang['wotlk_7_15']					= '7/15';
+$lang['wotlk_8_15']					= '8/15';
+$lang['wotlk_9_15']					= '9/15';
+$lang['wotlk_10_15']					= '10/15';
+$lang['wotlk_11_15']					= '11/15';
+$lang['wotlk_12_15']					= '12/15';
+$lang['wotlk_13_15']					= '13/15';
+$lang['wotlk_14_15']					= '14/15';
 
 $lang['test']						= array('Open','DOWN');
 ?>
